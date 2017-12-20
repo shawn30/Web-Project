@@ -1,0 +1,522 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow-x:hidden;
+    font-family: 'Roboto', sans-serif;
+}
+#container {
+    width: 100%;
+    min-height:100%;
+    position:relative;
+}
+#header {
+    position: fixed;
+    width: 98.75%;
+    height: auto;
+    z-index: 10;
+    //right: 17px;
+}
+#navigation{
+    background: linear-gradient(to right,rgb(16, 16, 16),rgb(32, 32, 32));
+    height: 30px;
+    width: 100%;
+    padding-top: 10px;
+}
+#navigation #nav1 a{
+    font-weight: 800;
+    text-decoration: none;
+    float: left;
+    color: white;
+    padding-right: 5%;
+}
+#navigation #nav2 a{
+    font-weight: 800;
+    text-decoration: none;
+    float: right;
+    color: white;
+    padding-left: 5%;
+}
+
+#nav1{
+    margin-left: 2%;
+    width: 30%;
+    height: 15px;
+    float: left;
+}
+#nav2{
+    margin-right: 2%;
+    width: 30%;
+    //margin-left: 20%;
+    height: 15px;
+    float: right;
+}
+#search{
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 80px;
+}
+
+
+#logo
+{
+    margin-left: 20px;
+    //border: 1px solid blue;
+    height: 106px;
+    float: left;
+    width:177px;
+}
+
+#language{
+    height: 55px;
+    width: 20%;
+    float: left;
+}
+
+#searchbtn{
+    height: 40px;
+    width: 10%;
+    margin-left: 90%;
+}
+
+input{
+    float: left;
+    width: 90%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+}
+
+#searchbar{
+    z-index: 20;
+    position: sticky;
+    top: 60px;
+    width: 40%;
+    height: 40px;
+    margin-top: 480px;
+    margin-left: 30%;
+    margin-right: 9%;
+    float: left;
+}
+
+#body {
+    //position: relative;
+    padding-top: 40;
+    width: 100%;
+    padding-bottom:150px;   /* Height of the footer */
+}
+
+#banner{
+    width: 100%;
+    height: 550px;
+   // background: linear-gradient(to right,rgb(0, 56, 143),rgb(0, 116, 24));
+}
+#leftarrow{
+    left: 0;
+    position: absolute;
+    z-index: 5;
+    margin-left: 20px;
+    height: 550px;
+    opacity: 0.3;
+    width: 3%;
+}
+#rightarrow{
+    z-index: 5;
+    height: 550px;
+    opacity: 0.3;
+    position: absolute;
+    width: 3%;
+    margin-right: 20px;
+    right: 0;
+}
+#leftarrow>img ,#rightarrow>img{
+    margin-top: 250px;
+}
+#leftarrow:hover , #rightarrow:hover{
+    cursor: pointer;
+}
+
+
+
+#wrapperon{
+    width: 100%;
+    height: 312px;
+}
+
+#featured{
+    position: sticky;
+    top: 120;
+    padding: 15px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    color: aqua;
+}
+#create{
+    position: absolute;
+    right: 38;
+    top: 32;
+    padding: 10px 0px 0px 0px;
+    height: 25px;
+    width: 160px;
+    border: 1px solid grey;
+    text-align: center;
+    background: linear-gradient(to left,rgba(54, 30, 54,.7),rgba(108, 59, 108,.7));
+    cursor: pointer;
+}
+#create a{
+    color: white;
+    text-decoration: none;
+}
+
+#wrapperfeat{
+    //position: relative;
+    width: 100%;
+    min-height: 10px;
+    max-height: 70px;
+}
+
+#events{
+    //padding: 0 5% 0 5%;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+}
+
+#onup{
+    position: sticky;
+    top: 120;
+    clear: both;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding: 20px 25% 20px 40%;
+   // border: 1px solid black;
+}
+#ongoingtab{
+    float: left;
+    border: 1px solid grey;
+    height: 25px;
+    background-color: grey;
+    text-align: center;
+    padding-top: 5px;
+    width: 10%;
+    
+}
+#upcomingtab{
+    float: left;
+    border: 1px solid grey;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    width: 10%;
+}
+#ongoingtab:hover , #upcomingtab:hover{
+    cursor: pointer;
+}
+
+#ongoing{
+    display: block;
+    clear: both;
+    width: 66%;
+    margin-top: 20px;
+    margin-left: 15%;
+    height: 300px;
+    padding: 2%;
+    border: 1px solid red;
+}
+
+#upcoming{
+    display: none;
+    clear: both;
+    width: 66%;
+    margin-top: 20px;
+    margin-left: 15%;
+    height: 300px;
+    padding: 2%;
+    border: 1px solid grey;
+}
+.event2{
+    float: left;
+    width: 30%;
+    height: 250px;
+    border: 1px solid #d9d8d1;
+    margin: 0 13px 20px;
+}
+.event{
+    float: left;
+    width: 23%;
+    height: 250px;
+    border: 1px solid #d9d8d1;
+    margin: 0 6px 20px;
+}
+
+.img{
+    width: 100%;
+    min-height: 144px;
+    max-height: 184px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tag{
+    font-size: 12px;
+    line-height: 17px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#whyus{
+    text-align: center;
+    width: 80%;
+    padding: 10%;
+    margin-top: 80px;
+    height: 100px;
+}
+
+#footer {
+    border-top: 1px solid lightgray;
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:150px;   /* Height of the footer */
+    //background:#6cf;
+}
+
+#flogo{
+    width: 220px;
+    height: auto;
+    margin:auto;
+    margin-top: -50;
+}
+#follow{
+    height: 40px;
+    padding-left: 35%;
+}
+
+.icons{
+    float: left;
+    margin: auto;
+    margin-right: 8%;
+}
+#copyrights{
+    background: rgba(1,1,1,1);
+    text-align: center;
+    color: rgba(0,0,0,.5);
+}
+
+
+#login{
+    display: none;
+    border: 1px solid black;
+    width: 50%;
+    height: 525px;
+    margin-top: 60px;
+    position: fixed;
+    margin-left: 25%;
+    z-index: 500;
+    background-color: rgba(0,0,0,0.8);
+    
+}
+
+#top{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+#heading{
+    float: left;
+    text-align: center;
+    height: 10px;
+    width: 92%;
+    margin-top: 20px;
+    padding-left: 3%;
+}
+
+#close{
+    width: 5%;
+    height: 30px;
+    float: right;
+    margin-top: 15px;
+}
+
+
+#middle{
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid rgba(0,0,0,0.8);
+}
+
+#instant{
+    height: 20px;
+    width: 100%;
+   // border: 1px solid green;    
+    margin-top: 70px;
+    text-align: center;
+    position: absolute;
+}
+#via{
+    width: 100%;
+    height: 60px;
+   // border: 1px solid yellow;
+    margin-top: 100px;
+    
+}
+
+#google{
+    width: 35%;
+    height: 40px;
+    float: left;
+    margin-left: 10%;
+    left: 0;
+    margin-top: 10px;
+    background-color:rgb(219, 71, 51) ;
+}
+
+#fb{
+    width: 35%;
+    background-color: rgb(59, 89, 152);
+    margin-top: 10px;
+    margin-left: 10%;
+    height: 40px;
+    float:left;
+}
+
+span{
+    text-align: center;
+    color: white;
+    margin: 10px;
+    
+}
+
+.linkgf{
+    float: left;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.gficon{
+    float: left;
+}
+
+#username , #password{
+    width: 50%;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 25%;
+    padding: 10px;
+    clear: both;
+}
+
+#signin{
+    clear: both;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15px;
+    background-color: crimson;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+button{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:selected{
+    text-decoration: none;
+    border: none;
+}
+
+#forgot{
+    font-size: 10px;
+    margin-left: 43%;
+}
+
+
+#signup{
+    margin-top: 63px;
+    margin-left: 35%;
+}
+#signup>span{
+    color: darkgray;
+}
+#signup>span>a>span{
+    color: crimson;
+}
+#signup>span>a:link ,#signup>span>a:visited{
+    text-decoration: none;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+#signuppage{
+    width: 80%;
+    height: 500px;
+    z-index: 250;
+    margin-top: 70px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    margin-left: 10%;
+   display: none;
+}
+
+#signtop{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    padding-bottom: 15px;
+}
+
+#signheading{
+    float: left;
+    width:92%;
+    height: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 3%;
+}
+#signclose{
+    padding-bottom: 10px;
+    float: right;
+    height: 30px;
+    margin-bottom: 10px;
+    width: 1%px;
+}
+
+
+.signupdetails{
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    margin-top: 35px;
+    margin-left: 7%;
+    opacity: .9;
+}
+
+.signupdetails>span{
+    font-size: 20px;
+}
+
+#signupbtn{
+    margin-top: 60px;    
+    margin-left: 30%;    
+    background-color: crimson;
+}
+
